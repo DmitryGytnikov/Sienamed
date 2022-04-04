@@ -1,0 +1,107 @@
+// normalize.css
+@import "../../node_modules/normalize.css/normalize";
+
+// Переменные
+@import "variables.scss";
+
+// Миксины
+@import "mixins.scss";
+
+// Медиа-запросы
+@import "media-queries.scss";
+
+// Fonts
+@import "font.scss";
+
+// Переменные
+
+:root {
+  --basic-hover: #8ec682;
+}
+
+// Глобальные стили и обнуление
+img {
+  width: 100%;
+  max-width: 100%;// размер картинки не больше ширины контейнера
+  height: auto;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+// Скрытые заголовки и скрытые описания ссылок
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// html, body
+.page-html {
+  height: 100%;
+}
+
+.page {
+  font-family: "TT Norms", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #303030;
+  font-size: 16px;
+  line-height: 28px;
+
+  background-color: #ffffff;
+
+  min-width: 320px; // появляется нижняя прокрутка
+
+  // Липкий подвал
+  // height: 100%;
+  // display: grid;
+  // grid-template-rows: min-content 1fr min-content;
+  // align-content: start;
+
+  // @media (max-width: 760px) {
+  //   // overflow: hidden; //Запрет скролла при открытом меню
+  // }
+  overflow-x: hidden;
+}
+
+// container
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 389px) {
+    padding: 0 10px;
+  }
+
+  &--mobile {
+    @media (max-width: 495px) {
+      padding-right: 0;
+    }
+  }
+}
