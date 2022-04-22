@@ -1,65 +1,32 @@
 @font-face {
-  font-family: "TT Norms";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("TT Norms Light"),
-    local("TTNorms-Light"),
-    url("../fonts/TTNorms-Light.woff2") format("woff2"),
-    url("../fonts/TTNorms-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms";
+  font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("TT Norms Regular"),
-    local("TTNorms-Regular"),
-    url("../fonts/TTNorms-Regular.woff2") format("woff2"),
-    url("../fonts/TTNorms-Regular.woff") format("woff");
+  src: local("Gotham Pro Regular"),
+    local("Gotham-Pro-Regular"),
+    url("../fonts/GothamPro.woff2") format("woff2"),
+    url("../fonts/GothamPro.woff") format("woff");
 }
 
 @font-face {
-  font-family: "TT Norms";
+  font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("TT Norms Medium"),
-    local("TTNorms-Medium"),
-    url("../fonts/TTNorms-Medium.woff2") format("woff2"),
-    url("../fonts/TTNorms-Medium.woff") format("woff");
+  src: local("Gotham Pro Medium"),
+    local("Gotham-Pro-Medium"),
+    url("../fonts/GothamPro-Medium.woff2") format("woff2"),
+    url("../fonts/GothamPro-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "TT Norms";
+  font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("TT Norms Bold"),
-    local("TT-Norms-Bold"),
-    url("../fonts/TTNorms-Bold.woff2") format("woff2"),
-    url("../fonts/TTNorms-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("TT Norms Italic"),
-    local("TT-Norms-Italic"),
-    url("../fonts/TTNorms-Italic.woff2") format("woff2"),
-    url("../fonts/TTNorms-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms";
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: local("TT Norms Medium Italic"),
-    local("TT-Norms-Medium-Italic"),
-    url("../fonts/TTNorms-MediumItalic.woff2") format("woff2"),
-    url("../fonts/TTNorms-MediumItalic.woff") format("woff");
+  src: local("Gotham Pro Bold"),
+    local("Gotham-Pro-Bold"),
+    url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+    url("../fonts/GothamPro-Bold.woff") format("woff");
 }
