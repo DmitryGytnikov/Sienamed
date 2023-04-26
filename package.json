@@ -1,7 +1,7 @@
 {
-  "name": "Rose_garden",
+  "name": "Sienamed",
   "private": true,
-  "description": "проект Rose_garden",
+  "description": "проект Sienamed",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
