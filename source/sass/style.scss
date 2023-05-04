@@ -1108,6 +1108,7 @@ ul {
     & a {
       position: relative;
       color: #ffffff;
+      padding: 15px 0;
 
       &::after {
         content: "";
@@ -1116,7 +1117,7 @@ ul {
         height: 1px;
         background-color: #ffffff;
         right: 0;
-        bottom: 1px;
+        bottom: 15px;
         transition: all 0.2s ease;
       }
     }
@@ -1310,3 +1311,148 @@ ul {
 }
 
 // about-vacancies-otolaringolog.html^^^
+
+
+// about.html
+
+.total {
+  padding: 75px 0 100px 0;
+}
+
+.total__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+.total__inner-text {
+  width: 562px;
+  margin-right: 112px;
+
+  & p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 33px;
+  }
+
+  & ul {
+    width: 309px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & li {
+      & a {
+        display: block;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.total__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  width: 478px;
+  margin-bottom: 30px;
+}
+
+.total__inner-img {
+  flex-grow: 1;
+  border-radius: 10px;
+  height: 405px;
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    object-position: left center;
+  }
+}
+
+.total__advanteges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 135px;
+
+  & li {
+    & div {
+      font-size: 64px;
+      font-weight: 500;
+    }
+
+    & span {
+      font-weight: normal;
+      color: #46abff;
+      position: relative;
+      left: -18px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #636f79;
+    }
+  }
+}
+
+.total__description {
+  display: flex;
+}
+
+.total-description {
+  width: 562px;
+  margin-right: 112px;
+  padding-bottom: 118px;
+
+  & p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.total-description__title {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.description-slider {
+  flex-grow: 1;
+
+  width: 646px;
+  height: 448px;
+  background-color: #46abff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    object-position: left center;
+  }
+}
+
+.description-banner {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  background: linear-gradient(280.09deg, #46abff 0%, #74c0ff 100%);
+  border-radius: 10px;
+  padding: 56px;
+  width: 730px;
+
+  margin-top: -58px;
+  margin-bottom: 100px;
+
+  // position: absolute;
+  // left: 0;
+  // bottom: -194px;
+}
+
+// about.html^^^
