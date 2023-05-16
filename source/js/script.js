@@ -15,7 +15,7 @@ searchClose.addEventListener(`click`, function (evt) {
   headerSearchBurger.classList.remove(`page-search--active`);
 });
 
-// $(function () {
+$(function () {
 
   // Cлайдер main__about-slider на main.html
   // let slider2 = document.querySelector(`.main__about-slider`);
@@ -31,5 +31,19 @@ searchClose.addEventListener(`click`, function (evt) {
   //   });
   // }
 
+  // Главный слайдер на main.html
+  let slider1 = document.querySelector(`.slider-big`);
+  if (slider1) {
+    $('.slider-big').slick({
+      dots: false,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToShow: 1,
+      prevArrow: $('.slider-big-wr__button--left'),
+      nextArrow: $('.slider-big-wr__button--right'),
+    });
+  }
 
-// });
+
+});
