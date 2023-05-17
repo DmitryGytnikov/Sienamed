@@ -1582,7 +1582,7 @@ ul {
     height: 100%;
     position: relative;
 
-    & .slider-big-wr__button--left {
+    & .slider-big__button--left {
       position: absolute;
       width: 56px;
       height: 56px;
@@ -1594,7 +1594,7 @@ ul {
       z-index: 9999;
     }
 
-    & .slider-big-wr__button--right {
+    & .slider-big__button--right {
       position: absolute;
       width: 56px;
       height: 56px;
@@ -1675,5 +1675,152 @@ ul {
 
 //
 
+
+//
+
+.basic__slider-specialist {
+  margin-bottom: 120px;
+
+  & .basic__slider-specialist-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    & .slider-specialist__title {
+      font-weight: 700;
+      font-size: 34px;
+      margin-right: auto;
+    }
+
+    & div {
+      width: 127px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .slider-specialist__button--left {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+      }
+
+      .slider-specialist__button--right {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+      }
+    }
+
+    & a {
+      margin-left: 45px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 13px;
+      color: #ffffff;
+      background: #46abff;
+      border-radius: 5px;
+      width: 205px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+  }
+
+  & .slider-specialists {
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+
+    margin: 0 -14px;
+
+    &::before { //Заглушка слева для исправления бага слайдера
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 100%;
+      background: #ffffff;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+    }
+
+    &::after { //Заглушка справа для исправления бага слайдера
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 100%;
+      background: #ffffff;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+    }
+
+    & li {
+      overflow: hidden;
+      border-radius: 10px;
+
+      & a {
+        display: block;
+        // width: 309px;
+        min-height: 473px;
+        padding: 35px;
+        cursor: pointer;
+        overflow: hidden;
+        background: #f7f9fa;
+        border-radius: 10px;
+        color: #1f3140;
+        height: 100%;
+
+        width: calc(100% - 28px);
+        margin: 0 auto;
+
+        & img {
+          width: 239px;
+          height: 275px;
+          overflow: hidden;
+          border-radius: 5px;
+          object-fit: cover;
+          margin-bottom: 17px;
+        }
+
+        & p {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 140%;
+        }
+
+        & span {
+          font-size: 14px;
+          line-height: 24px;
+          color: #636f79;
+        }
+      }
+    }
+
+    & .slick-list {
+      overflow: hidden;
+    }
+
+    & .slick-track {
+      display: flex;
+      justify-content: start;
+      align-items: stretch;
+    }
+  }
+}
+
+//
+
+
+//
 
 // main.html^^^
