@@ -12,22 +12,33 @@ let burgerServices = document.querySelector(`.header-top__search-burger--service
 
 if (burger && headerSearchBurger && searchClose && burgerServices) {// удалить?
 
-burger.addEventListener(`click`, function (evt) {
-  evt.preventDefault();
-  headerSearchBurger.classList.add(`page-search--active`);
-});
+  burger.addEventListener(`click`, function (evt) {
+    evt.preventDefault();
+    headerSearchBurger.classList.add(`page-search--active`);
+  });
 
-searchClose.addEventListener(`click`, function (evt) {
-  evt.preventDefault();
-  headerSearchBurger.classList.remove(`page-search--active`);
-});
+  searchClose.addEventListener(`click`, function (evt) {
+    evt.preventDefault();
+    headerSearchBurger.classList.remove(`page-search--active`);
+  });
 
-burgerServices.addEventListener(`click`, function (evt) {
-  evt.preventDefault();
-  headerSearchBurger.classList.add(`page-search--active`);
-});
+  burgerServices.addEventListener(`click`, function (evt) {
+    evt.preventDefault();
+    headerSearchBurger.classList.add(`page-search--active`);
+  });
 
 }
+
+
+//Бургер
+let burgerMain = document.querySelector(`.header-top__btn`);
+let headerBottomMenu = document.querySelector(`.header-bottom`);
+
+burgerMain.addEventListener(`click`, function (evt) {
+  evt.preventDefault();
+  burgerMain.classList.toggle(`header-top__btn--active`);
+  headerBottomMenu.classList.toggle(`header-bottom--active`);
+});
 
 
 $(function () {
@@ -112,4 +123,23 @@ $(function () {
     $($(this).attr('href')).addClass('tabs-content--active-1');
   });
 
+
+  // Выпадающее меню-аккордеон в футере
+
+  if (document.documentElement.clientWidth < 781) {
+    // console.log(document.documentElement.clientWidth);
+    $(".footer-top__link-title--acc").removeAttr("href");;
+    $('.footer-top__link-title--acc').click(function(e) {
+
+      // if($('.footer-top__inner').hasClass('accordion--one')) {
+      //   $('.footer-top__link-title--acc').not($(this)).removeClass('accordion--active');
+      //   // $('.accordion__link-list').not($(this).next()).slideUp(300);
+      //   $('.accordion__link-list').closest('.footer-top__inner').find('.footer-top__hidden').slideUp(300);
+      // }
+
+      // $(this).toggleClass('accordion--active').next().slideToggle(300);
+      $(this).toggleClass('accordion--active').closest('ul').find('.footer-top__hidden').slideToggle(300);
+
+    });
+  }
 });
