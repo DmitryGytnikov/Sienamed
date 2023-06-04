@@ -33,11 +33,13 @@ if (burger && headerSearchBurger && searchClose && burgerServices) {// удал�
 //Бургер
 let burgerMain = document.querySelector(`.header-top__btn`);
 let headerBottomMenu = document.querySelector(`.header-bottom`);
+let page = document.querySelector(`.page`);
 
 burgerMain.addEventListener(`click`, function (evt) {
   evt.preventDefault();
   burgerMain.classList.toggle(`header-top__btn--active`);
   headerBottomMenu.classList.toggle(`header-bottom--active`);
+  page.classList.toggle(`page--hidden`);
 });
 
 
