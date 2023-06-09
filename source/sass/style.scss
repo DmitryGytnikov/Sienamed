@@ -129,6 +129,49 @@ ul {
   background-color: #ffffff;
 }
 
+
+.header-bottom__box--wr {
+  // overflow-x: scroll;
+  scrollbar-color: #ffffff #ffffff;
+  // scrollbar-color: #f9f9f9 #4e4e4e17;
+  scrollbar-width: thin;
+}
+
+.header-bottom__box--wr::-webkit-scrollbar {
+  width: 0;
+}
+
+.header-bottom__box--wr::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+.header-bottom__box--wr::-webkit-scrollbar-track:hover {
+  border-left: solid 0 transparent;
+  background-color: #ffffff;
+}
+
+
+.page-search__box--wr {
+  // overflow-x: scroll;
+  scrollbar-color: #ffffff #ffffff;
+  // scrollbar-color: #f9f9f9 #4e4e4e17;
+  scrollbar-width: thin;
+}
+
+.page-search__box--wr::-webkit-scrollbar {
+  width: 0;
+}
+
+.page-search__box--wr::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+.page-search__box--wr::-webkit-scrollbar-track:hover {
+  border-left: solid 0 transparent;
+  background-color: #ffffff;
+}
+
+
 // Кастомный скрол^^^
 /*firefox*/
 
@@ -425,10 +468,6 @@ ul {
     margin-left: auto;
   }
 
-  .header-top__search-burger {
-
-  }
-
   .header-top__visually-impaired {
     display: none;
   }
@@ -440,7 +479,15 @@ ul {
 
   .header-bottom__box--wr {
     overflow-y: scroll;
-    height: 50%;
+    // height: 50%;
+  }
+
+  .header-bottom .header-bottom__list {
+    display: block;
+  }
+
+  .header-bottom.header-bottom--active {
+    right: 0;
   }
 
   .header-bottom {
@@ -455,14 +502,10 @@ ul {
     z-index: 10100;
     width: 390px;
     max-width: 390px;
-    min-height: 844px;
+    // min-height: 844px;
     transition: all 0.2s ease;
     overflow: hidden;
     height: 100%;
-  }
-
-  .header-bottom.header-bottom--active {
-    right: 0;
 
     .header-bottom__logo {
       display: flex;
@@ -1369,13 +1412,24 @@ ul {
   background: linear-gradient(280.09deg, #46abff 0%, #74c0ff 100%);
   display: block;
   top: -800px;
+  top: -100%;
   margin: 0;
   z-index: 10102;
   transition: all 0.5s ease;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  min-height: 675px;
+  // padding-top: 50px;
+  overflow: hidden;
+  height: 100%;
 }
+
+.page-search--wr {
+  height: 100%;
+  overflow: auto;
+}
+
+.page-search__box--wr {
+  overflow-y: scroll;
+}
+
 
 .page-search.page-search--active {
   top: 0;
@@ -1393,6 +1447,7 @@ ul {
   cursor: pointer;
   transition: all 0.2s ease;
   margin-bottom: 59px;
+  margin-top: 50px;
 }
 
 .page-search__title {
@@ -1518,13 +1573,9 @@ ul {
     right: 6px;
   }
 
-
-  .page-search {
-    padding-top: 25px;
-  }
-
   .page-search__close {
     margin-bottom: 25px;
+    margin-top: 25px;
   }
 }
 
@@ -2117,6 +2168,21 @@ ul {
     display: none;
   }
 }
+
+@media (max-width: 630px) {
+  .about__tab-inner {
+    overflow-x: scroll;
+  }
+
+  .about__tab-mobile-overflow {
+    width: 290px;
+  }
+
+  .about__tab-wr {
+    width: 590px;
+  }
+}
+
 
 // about-vacancies-otolaringolog.html^^^
 
@@ -3600,3 +3666,203 @@ ul {
 }
 
 //
+
+
+// Попап
+
+.popap-feedback-call {
+  max-width: 642px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 60px 75px 75px 75px;
+  display: none;
+  position: relative;
+  overflow: visible;
+
+  @media (max-width: 780px) {
+    width: 500px;
+    padding: 30px 30px 30px 30px;
+  }
+
+  @media (max-width: 620px) {
+    width: 400px;
+  }
+
+  @media (max-width: 540px) {
+    width: 300px;
+  }
+
+  @media (max-width: 410px) {
+    width: 100%;
+  }
+
+  & .popap-feedback-call.fancybox-content {
+    overflow: visible;
+  }
+
+  .fancybox-slide--html & .fancybox-close-small {
+    right: 17px;
+    top: 13px;
+  }
+
+  & > h4 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 20px;
+  }
+
+  & > p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 35px;
+  }
+
+  & > .order-number {
+    margin-bottom: 20px;
+  }
+}
+
+.form-feedback-call__input-box {
+  & input {
+    margin-bottom: 20px;
+  }
+
+  & textarea {
+    margin-bottom: 35px;
+  }
+
+  & .input-bottom {
+    margin-bottom: 35px;
+  }
+}
+
+.input-box__name-input,
+.input-box__tel-input,
+.input-box__email-input {
+  background: #f9f9f9;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  width: 100%;
+  height: 52px;
+  outline: none;
+  padding: 16px 35px 15px 35px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9f9f9f;
+  transition: all 0.2s ease;
+
+  &::placeholder {
+    font-family: "TT Norms", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #9f9f9f;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid var(--basic-hover);
+  }
+}
+
+.form-feedback-call__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-feedback-call__inner-text {
+  font-size: 14px;
+  line-height: 21px;
+  width: 310px;
+}
+
+.form-feedback-call__inner-link {
+  font-size: 14px;
+  line-height: 21px;
+  color: #1f3140;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transition: all 0.2s ease;
+  }
+}
+
+.form-feedback-call__inner-btn {
+  outline: none;
+  width: 156px;
+  height: 56px;
+  cursor: pointer;
+  background: #46abff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  // text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.2s ease;
+
+  @media (max-width: 780px) {
+    margin-top: 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #a7d29d;
+  }
+}
+
+// Попап ^^^
+
+
+// index.html
+
+.page-links-wr {
+  padding-top: 100px;
+  padding-bottom: 110px;
+
+  @media (max-width: 660px) {
+    padding-top: 0;
+    padding-bottom: 18px;
+  }
+}
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  & p {
+    margin-top: 22px;
+  }
+}
+
+.page-link {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  transition: all 0.2s ease;
+}
+
+.page-link:first-child {
+  margin-top: 22px;
+}
+
+// index.html ^^^

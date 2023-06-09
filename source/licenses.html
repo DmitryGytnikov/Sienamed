@@ -5,13 +5,17 @@
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
   <title>Сиена-мед</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Сиена-мед">
 </head>
 
 <body class="page">
-<!--
+
     <div class="page-search">
+      <div class="page-search--wr">
+        <div class="page-search__box--wr">
+
       <div class="container">
 
         <button class="page-search__close" type="button">
@@ -58,8 +62,11 @@
             </ul>
         </div>
       </div>
+
+        </div>
+      </div>
     </div>
- -->
+
     <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -377,7 +384,7 @@
                             Если у Вас возникли вопросы, задайте их в форме обратной связи или по номеру —
                             <br> <a href="tel:+74732477380">+7 (473) 247-73-80</a>
                         </p>
-                        <button class="license__question-button" type="button">
+                        <button class="license__question-button" data-fancybox="" data-src="#popap-feedback-call" type="button">
                             Задать вопрос
                         </button>
                     </div>
@@ -390,33 +397,33 @@
     </main>
 
     <footer class="footer">
-<!--
+
         <div class="footer-top">
             <div class="container">
-                <div class="footer-top__inner">
+                <div class="footer-top__inner accordion--one">
                     <div class="footer-top__links-left">
                         <ul>
                             <li>
-                                <a class="footer-top__link-title" href="about.html">
+                                <a  class="footer-top__link-title footer-top__link-title--acc" href="#">
                                     О клинике
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Фотогалерея
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Памятка клиента
                                 </a>
                             </li>
-                            <li>
-                                <a href="about-vacancies-otolaringolog.html">
+                            <li class="footer-top__hidden">
+                                <a href="#">
                                     Вакансии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Специалисты
                                 </a>
@@ -424,26 +431,26 @@
                         </ul>
                         <ul>
                             <li>
-                                <a class="footer-top__link-title" href="#">
+                                <a class="footer-top__link-title footer-top__link-title--acc" href="#">
                                     Услуги
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Специалисты
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Заболевания
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Диагностика
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Анализы
                                 </a>
@@ -453,7 +460,7 @@
                     <div class="footer-top__links-center">
                         <ul>
                             <li>
-                                <a class="footer-top__link-title" href="#">
+                                <a class="footer-top__link-title current" href="#">
                                     Лицензии
                                 </a>
                             </li>
@@ -482,106 +489,106 @@
                     <div class="footer-top__links-right">
                         <ul>
                             <li>
-                                <a class="footer-top__link-title" href="#">
+                                <a class="footer-top__link-title footer-top__link-title--acc" href="#">
                                     Центры
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр терапии мозга
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр позвоночника и суставов
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр ревматологии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр кожных болезней
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр сосудистой патологии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Клиника неврозов
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр гастроэнтерологии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр эндокринологии и коррекции веса
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр «детский врач»
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр детской неврологии и психиатрии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Оптика
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр кардиологии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр ортопедии
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Офтальмологический центр
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Отоларингологический центр
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр патологии речи
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр реабилитации
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Диагностический центр
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Оборудование для лечения и реабилитации
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer-top__hidden">
                                 <a href="#">
                                     Центр мануальной терапии
                                 </a>
@@ -591,7 +598,7 @@
                 </div>
             </div>
         </div>
- -->
+
         <div class="footer-middle">
             <div class="container">
                 <div class="footer-middle__box">
@@ -665,7 +672,7 @@
                             </a>
                         </div>
                     </div>
-                    <button class="footer-middle__call-popap" type="button">
+                    <button class="footer-middle__call-popap" data-fancybox="" data-src="#popap-feedback-call" type="button">
                         Обратный звонок
                     </button>
 
@@ -706,6 +713,32 @@
 
     </footer>
 
+
+    <div class="popap-feedback-call" id="popap-feedback-call">
+      <h4>Обратный звонок</h4>
+      <p>Заполните простую форму и мы с вами свяжемся в ближайшее время для уточнения информации.</p>
+      <form class="form-feedback-call" aria-label="Форма для обратной связи" method="post">
+        <div class="form-feedback-call__input-box">
+            <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="Ваше имя*" required>
+            <input class="input-box__tel-input input-bottom" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон*" required>
+        </div>
+        <div class="form-feedback-call__inner">
+            <p class="form-feedback-call__inner-text">
+                Нажимая кнопку «Отправить» я даю
+                <a class="form-feedback-call__inner-link" href="#" target="_blank">
+                    согласие
+                </a>
+                <a class="form-feedback-call__inner-link" href="#" target="_blank">
+                    на обработку моих персональных данных
+                </a>
+            </p>
+            <button class="form-feedback-call__inner-btn" type="submit">Oтправить</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

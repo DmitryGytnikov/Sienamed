@@ -7,39 +7,66 @@
 let burger = document.querySelector(`.header-top__search-burger`);
 let headerSearchBurger = document.querySelector(`.page-search`);
 let searchClose = document.querySelector(`.page-search__close`);
+let page = document.querySelector(`.page`);
 
 let burgerServices = document.querySelector(`.header-top__search-burger--services`);
 
-if (burger && headerSearchBurger && searchClose && burgerServices) {// удалить?
+// if (burger && headerSearchBurger && searchClose && burgerServices) {// удалить?
 
   burger.addEventListener(`click`, function (evt) {
     evt.preventDefault();
     headerSearchBurger.classList.add(`page-search--active`);
+    page.classList.add(`page--hidden`);
   });
 
   searchClose.addEventListener(`click`, function (evt) {
     evt.preventDefault();
     headerSearchBurger.classList.remove(`page-search--active`);
+    page.classList.remove(`page--hidden`);
   });
 
+if (burgerServices) { // burgerServices - только на main.html
   burgerServices.addEventListener(`click`, function (evt) {
     evt.preventDefault();
     headerSearchBurger.classList.add(`page-search--active`);
+    page.classList.add(`page--hidden`);
   });
-
 }
 
 
 //Бургер
 let burgerMain = document.querySelector(`.header-top__btn`);
 let headerBottomMenu = document.querySelector(`.header-bottom`);
-let page = document.querySelector(`.page`);
 
 burgerMain.addEventListener(`click`, function (evt) {
   evt.preventDefault();
   burgerMain.classList.toggle(`header-top__btn--active`);
   headerBottomMenu.classList.toggle(`header-bottom--active`);
   page.classList.toggle(`page--hidden`);
+});
+
+
+// Закрытие page-search и меню-бургера header-bottom по Esc
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    // $.fancybox.close();
+
+    headerSearchBurger.classList.remove(`page-search--active`); //page-search
+    page.classList.remove(`page--hidden`);//page-search
+
+    burgerMain.classList.remove(`header-top__btn--active`);
+    headerBottomMenu.classList.remove(`header-bottom--active`);
+    page.classList.remove(`page--hidden`);
+  }
+});
+
+
+// Закрытие попапа fancybox по Esc
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    // $.fancybox.close();
+    $.fancybox.close();
+  }
 });
 
 
@@ -144,4 +171,5 @@ $(function () {
 
     });
   }
+
 });
