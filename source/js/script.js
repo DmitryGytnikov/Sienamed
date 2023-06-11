@@ -160,13 +160,6 @@ $(function () {
     $(".footer-top__link-title--acc").removeAttr("href");;
     $('.footer-top__link-title--acc').click(function(e) {
 
-      // if($('.footer-top__inner').hasClass('accordion--one')) {
-      //   $('.footer-top__link-title--acc').not($(this)).removeClass('accordion--active');
-      //   // $('.accordion__link-list').not($(this).next()).slideUp(300);
-      //   $('.accordion__link-list').closest('.footer-top__inner').find('.footer-top__hidden').slideUp(300);
-      // }
-
-      // $(this).toggleClass('accordion--active').next().slideToggle(300);
       $(this).toggleClass('accordion--active').closest('ul').find('.footer-top__hidden').slideToggle(300);
 
     });

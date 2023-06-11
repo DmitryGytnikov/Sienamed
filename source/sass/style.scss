@@ -152,7 +152,7 @@ ul {
 
 
 .page-search__box--wr {
-  // overflow-x: scroll;
+  overflow-x: scroll;
   scrollbar-color: #ffffff #ffffff;
   // scrollbar-color: #f9f9f9 #4e4e4e17;
   scrollbar-width: thin;
@@ -270,6 +270,13 @@ ul {
     line-height: 24px;
     color: #1f3140;
     padding-top: 10px;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #46abff;
+    }
   }
 }
 
@@ -286,6 +293,12 @@ ul {
   position: relative;
   top: 1px;
   transition: all 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #1f3140;
+  }
 
   &::after {
     content: "";
@@ -318,6 +331,26 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  & svg rect {
+    transition: all 0.2s ease;
+  }
+
+  & svg path {
+    transition: all 0.2s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    & svg rect {
+      fill: #46abff;
+    }
+
+    & svg path {
+      fill: #ffffff;
+    }
+  }
 }
 
 .header-top__visually-impaired {
@@ -330,6 +363,26 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  & svg circle {
+    transition: all 0.2s ease;
+  }
+
+  & svg path {
+    transition: all 0.2s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    & svg circle {
+      fill: #46abff;
+    }
+
+    & svg path {
+      fill: #ffffff;
+    }
+  }
 }
 
 .header-bottom__box {
@@ -362,8 +415,15 @@ ul {
     font-size: 16px;
     line-height: 15px;
     color: #1f3140;
+    transition: all 0.2s ease;
 
     &:not([href]) {
+      color: #46abff;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
       color: #46abff;
     }
   }
@@ -491,18 +551,15 @@ ul {
   }
 
   .header-bottom {
-    // position: absolute;
     position: fixed;
     right: -390px;
     background-color: #ffffff;
     display: block;
-    // top: -800px;
     top: 0;
     margin: 0;
     z-index: 10100;
     width: 390px;
     max-width: 390px;
-    // min-height: 844px;
     transition: all 0.2s ease;
     overflow: hidden;
     height: 100%;
@@ -532,10 +589,6 @@ ul {
       display: block;
 
       padding: 38px 0 51px 0;
-    }
-
-    .header-bottom__list {
-      display: block;
     }
 
     .header-bottom__list li {
@@ -627,7 +680,6 @@ ul {
   }
 }
 
-
 // header^^^
 
 
@@ -650,6 +702,13 @@ ul {
     padding: 16px 7px 16px 17px;
     position: relative;
     transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #46abff;
+    }
+
 
     &::before {
       content: "";
@@ -739,11 +798,6 @@ ul {
 }
 
 .license__list {
-  // display: grid;
-  // grid-template-columns: 393px 393px;
-  // grid-row-gap: 55px;
-  // grid-column-gap: 113px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -757,6 +811,15 @@ ul {
   & li {
     display: flex;
     cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      & .license__list-title {
+        color: #46abff;
+      }
+    }
 
     & svg {
       display: block;
@@ -848,6 +911,14 @@ ul {
     padding: 14px 0;
     position: relative;
 
+    &:hover,
+    &:focus,
+    &:active {
+      &::after {
+        right: 100%;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -928,12 +999,10 @@ ul {
   }
 }
 
-
 // license.html^^^
 
 
 // footer
-
 
 //
 
@@ -956,12 +1025,27 @@ ul {
     line-height: 15px;
     color: #636f79;
     padding: 13px 0;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #46abff;
+    }
 
     &.footer-top__link-title {
       font-weight: 700;
       font-size: 16px;
       line-height: 15px;
       color: #1f3140;
+
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #46abff;
+      }
     }
 
     &.current {
@@ -1082,7 +1166,6 @@ ul {
 
 //
 
-
 .footer-middle {
   height: 168px;
   border-bottom: 2px solid #f3f6f8;
@@ -1137,6 +1220,13 @@ ul {
     line-height: 24px;
     color: #1f3140;
     padding: 14px 0;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #46abff;
+    }
   }
 }
 
@@ -1184,6 +1274,14 @@ ul {
     height: 48px;
     outline: none;
     border-radius: 50%;
+
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -1245,6 +1343,14 @@ ul {
       background: #1f3140;
       transition: all 0.2s ease;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::after {
+        right: 100%;
+      }
+    }
   }
 
   & > a:first-child {
@@ -1270,6 +1376,14 @@ ul {
       font-size: 14px;
       line-height: 13px;
       color: #f75064;
+
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        transform: scale(1.15);
+      }
     }
   }
 }
@@ -1390,7 +1504,6 @@ ul {
     display: inline-block;
   }
 
-
   .footer-bottom__box > a:first-child {
     margin-right: 0;
   }
@@ -1411,7 +1524,6 @@ ul {
   right: 0%;
   background: linear-gradient(280.09deg, #46abff 0%, #74c0ff 100%);
   display: block;
-  top: -800px;
   top: -100%;
   margin: 0;
   z-index: 10102;
@@ -1424,10 +1536,6 @@ ul {
 .page-search--wr {
   height: 100%;
   overflow: auto;
-}
-
-.page-search__box--wr {
-  overflow-y: scroll;
 }
 
 
@@ -1448,6 +1556,18 @@ ul {
   transition: all 0.2s ease;
   margin-bottom: 59px;
   margin-top: 50px;
+
+  & svg {
+    transition: all 0.2s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    & svg {
+      opacity: 0.7;
+    }
+  }
 }
 
 .page-search__title {
@@ -1536,11 +1656,16 @@ ul {
     color: #ffffff;
     opacity: 0.85;
     padding: 11px 20px;
-    // background: linear-gradient(280.09deg, #46abff 0%, #74c0ff 100%);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 5px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #7fc1f9;
+    }
   }
 }
 
@@ -1585,7 +1710,6 @@ ul {
     width: 143px;
   }
 }
-
 
 // .page-search^^^
 
@@ -1636,7 +1760,6 @@ ul {
 
 .centers__items {
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(422px, 1fr));
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 28px;
   grid-column-gap: 27px;
@@ -1651,6 +1774,15 @@ ul {
   overflow: hidden;
   position: relative;
   padding: 60px 65px 45px 45px;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    & div p {
+      color: #46abff;
+    }
+  }
 
   & a {
     position: absolute;
@@ -1741,6 +1873,7 @@ ul {
     color: #ffffff;
     overflow: hidden;
     position: relative;
+    border: none;
 
     &::placeholder {
       font-family: "Gotham Pro", "Arial", sans-serif;
@@ -1765,7 +1898,6 @@ ul {
   flex-basis: 100%;
 }
 
-
 .feedback-form____inner {
   display: flex;
   justify-content: space-between;
@@ -1779,6 +1911,15 @@ ul {
       position: relative;
       color: #ffffff;
       padding: 15px 0;
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        &::after {
+          height: 0;
+        }
+      }
 
       &::after {
         content: "";
@@ -1809,9 +1950,15 @@ ul {
     margin-left: 15px;
     flex-shrink: 0;
     transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff;
+      background: #7fc1f9;
+    }
   }
 }
-
 
 @media (max-width: 1050px) {
   .centers__items {
@@ -1930,7 +2077,6 @@ ul {
   }
 }
 
-
 @media (max-width: 710px) {
   .centers__item {
     padding: 40px 134px 45px  30px;
@@ -1981,6 +2127,12 @@ ul {
       transition: color 0.2s ease;
       padding: 14px 0;
 
+      &:hover,
+      &:focus,
+      &:active {
+        color: #46abff;
+      }
+
       &:not([href]) {
         color: #46abff;
 
@@ -2028,6 +2180,12 @@ ul {
       padding: 13px 0;
       transition: color 0.2s ease;
 
+      &:hover,
+      &:focus,
+      &:active {
+        color: #46abff;
+      }
+
       &:not([href]) {
         text-decoration-line: underline;
         color: #46abff;
@@ -2070,6 +2228,12 @@ ul {
 
     margin-top: 25px;
     margin-bottom: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #7fc1f9;
+    }
   }
 }
 
@@ -2119,7 +2283,6 @@ ul {
     }
   }
 }
-
 
 @media (max-width: 1260px) {
   .vacancies__inner {
@@ -2183,7 +2346,6 @@ ul {
   }
 }
 
-
 // about-vacancies-otolaringolog.html^^^
 
 
@@ -2222,6 +2384,13 @@ ul {
         height: 48px;
         width: 48px;
         border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+          transform: scale(1.15);
+        }
       }
     }
   }
@@ -2418,7 +2587,6 @@ ul {
   }
 }
 
-
 // about.html^^^
 
 
@@ -2460,6 +2628,12 @@ ul {
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #7fc1f9;
+  }
 }
 
 
@@ -2492,6 +2666,12 @@ ul {
       justify-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: #7fc1f9;
+      }
     }
   }
 
@@ -2701,6 +2881,28 @@ ul {
       left: 76px;
       background: transparent;
       z-index: 9999;
+
+      & svg circle {
+        transition: all 0.2s ease;
+      }
+
+      & svg path {
+        transition: all 0.2s ease;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        & svg circle {
+          fill: #46abff;
+          stroke: #46abff;
+          opacity: 1;
+        }
+
+        & svg path {
+          stroke: #ffffff;
+        }
+      }
     }
 
     & .slider-big__button--right {
@@ -2713,6 +2915,28 @@ ul {
       left: 147px;
       background: transparent;
       z-index: 9999;
+
+      & svg circle {
+        transition: all 0.2s ease;
+      }
+
+      & svg path {
+        transition: all 0.2s ease;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        & svg circle {
+          fill: #46abff;
+          stroke: #46abff;
+          opacity: 1;
+        }
+
+        & svg path {
+          stroke: #ffffff;
+        }
+      }
     }
   }
 }
@@ -2778,6 +3002,12 @@ ul {
       justify-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #f58686;
+      }
     }
   }
 }
@@ -2921,6 +3151,28 @@ ul {
         border-radius: 50%;
         cursor: pointer;
         background: transparent;
+
+        & svg circle {
+          transition: all 0.2s ease;
+        }
+
+        & svg path {
+          transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          & svg circle {
+            fill: #46abff;
+            stroke: #46abff;
+            opacity: 1;
+          }
+
+          & svg path {
+            stroke: #ffffff;
+          }
+        }
       }
 
       .slider-specialist__button--right {
@@ -2929,6 +3181,28 @@ ul {
         border-radius: 50%;
         cursor: pointer;
         background: transparent;
+
+        & svg circle {
+          transition: all 0.2s ease;
+        }
+
+        & svg path {
+          transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          & svg circle {
+            fill: #46abff;
+            stroke: #46abff;
+            opacity: 1;
+          }
+
+          & svg path {
+            stroke: #ffffff;
+          }
+        }
       }
     }
 
@@ -2948,6 +3222,12 @@ ul {
       justify-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: #7fc1f9;
+      }
     }
   }
 
@@ -2983,7 +3263,6 @@ ul {
     & li {
       & a {
         display: block;
-        // width: 309px;
         min-height: 473px;
         padding: 35px;
         cursor: pointer;
@@ -2995,9 +3274,15 @@ ul {
 
         width: calc(100% - 28px);
         margin: 0 auto;
+        transition: all 0.2s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: #46abff;
+        }
 
         & img {
-          // width: 239px;
           height: 275px;
           overflow: hidden;
           border-radius: 5px;
@@ -3097,6 +3382,28 @@ ul {
         border-radius: 50%;
         cursor: pointer;
         background: transparent;
+
+        & svg circle {
+          transition: all 0.2s ease;
+        }
+
+        & svg path {
+          transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          & svg circle {
+            fill: #46abff;
+            stroke: #46abff;
+            opacity: 1;
+          }
+
+          & svg path {
+            stroke: #ffffff;
+          }
+        }
       }
 
       .slider-reviews__button--right {
@@ -3105,6 +3412,28 @@ ul {
         border-radius: 50%;
         cursor: pointer;
         background: transparent;
+
+        & svg circle {
+          transition: all 0.2s ease;
+        }
+
+        & svg path {
+          transition: all 0.2s ease;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          & svg circle {
+            fill: #46abff;
+            stroke: #46abff;
+            opacity: 1;
+          }
+
+          & svg path {
+            stroke: #ffffff;
+          }
+        }
       }
     }
 
@@ -3124,6 +3453,12 @@ ul {
       justify-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: #7fc1f9;
+      }
     }
   }
 
@@ -3161,7 +3496,6 @@ ul {
         display: flex;
         flex-direction: column;
 
-        // width: 646px;
         min-height: 372px;
         padding: 45px;
         overflow: hidden;
@@ -3203,11 +3537,6 @@ ul {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            & svg {
-              // width: 22px;
-              // height: 22px;
-            }
           }
         }
 
@@ -3225,6 +3554,13 @@ ul {
           color: #46abff;
           padding: 11px 0;
           margin-top: -4px;
+          transition: all 0.2s ease;
+
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration-line: none;
+          }
         }
 
         & span {
@@ -3520,6 +3856,15 @@ ul {
           border: 1px solid #8fbdd3;
           border-radius: 5px;
           cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #46abff;
+            background: rgba(70, 171, 255, 0.1);
+            border: 1px solid rgba(70, 171, 255, 0.3);
+          }
 
           &.tab--active-1 {
             color: #46abff;
@@ -3580,6 +3925,13 @@ ul {
               line-height: 24px;
               color: #000000;
               display: inline-block;
+              transition: all 0.2s ease;
+
+              &:hover,
+              &:focus,
+              &:active {
+                color: #46abff;
+              }
             }
           }
         }
@@ -3760,12 +4112,6 @@ ul {
     line-height: 21px;
     color: #9f9f9f;
   }
-
-  &:hover,
-  &:focus,
-  &:active {
-    border: 1px solid var(--basic-hover);
-  }
 }
 
 .form-feedback-call__inner {
@@ -3810,7 +4156,6 @@ ul {
   line-height: 13px;
   text-align: center;
   letter-spacing: 0.05em;
-  // text-transform: uppercase;
   color: #ffffff;
   transition: all 0.2s ease;
 
@@ -3821,7 +4166,7 @@ ul {
   &:hover,
   &:focus,
   &:active {
-    background: #a7d29d;
+    background: #7fc1f9;
   }
 }
 
@@ -3859,6 +4204,12 @@ ul {
   text-decoration: underline;
   margin-bottom: 5px;
   transition: all 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #46abff;
+  }
 }
 
 .page-link:first-child {
