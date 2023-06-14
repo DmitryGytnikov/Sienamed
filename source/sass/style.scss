@@ -110,7 +110,7 @@ ul {
 /*firefox*/
 
 .slider-specialists-inner {
-  overflow-x: scroll;
+  // overflow-x: scroll;
   scrollbar-color: #ffffff #ffffff;
   // scrollbar-color: #f9f9f9 #4e4e4e17;
   scrollbar-width: thin;
@@ -2342,7 +2342,7 @@ ul {
   }
 
   .about__tab-wr {
-    width: 590px;
+    width: 625px;
   }
 }
 
@@ -3137,6 +3137,11 @@ ul {
       font-weight: 700;
       font-size: 34px;
       margin-right: auto;
+
+      @include tablet {
+        font-size: 22px;
+        line-height: 140%;
+      }
     }
 
     & div {
@@ -3722,7 +3727,6 @@ ul {
   }
 }
 
-
 //
 
 .basic__links {
@@ -4217,3 +4221,236 @@ ul {
 }
 
 // index.html ^^^
+
+
+// services-diseases-disease_migren.html
+
+.disease {
+  padding: 75px 0 100px 0;
+}
+
+.disease__inner {
+  display: flex;
+
+  .disease__text {
+    .disease__text-title {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 140%;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  & .disease__offers {
+    width: 393px;
+    margin-left: 28px;
+
+    & p {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 140%;
+
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.offer {
+  & a {
+    display: block;
+    width: 393px;
+    height: auto;
+
+    cursor: pointer;
+  }
+
+  b {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.basic__slider-specialist--disease {
+  padding-top: 104px;
+  background: #f3f6f8;
+  margin-bottom: 0;
+  padding-bottom: 112px;
+}
+
+.basic__slider-specialist.basic__slider-specialist--disease .slider-specialists::before {
+  background: #f3f6f8;
+}
+
+.basic__slider-specialist.basic__slider-specialist--disease .slider-specialists::after {
+  background: #f3f6f8;
+}
+
+.basic__slider-reviews--disease {
+  padding-top: 0;
+}
+
+.basic__slider-reviews .slick-slide {
+  height: auto;
+}
+
+.basic__slider-specialist.basic__slider-specialist--disease .slider-specialists li a {
+  background: #ffffff;
+}
+
+.feedback-wr--disease {
+  background: #f3f6f8;
+}
+
+@include tablet {
+  .disease__inner {
+    display: block;
+  }
+
+  .disease__inner .disease__offers {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .disease {
+    padding: 50px 0 50px 0;
+  }
+
+  .disease__inner .disease__text .disease__text-title {
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  .disease__inner .disease__offers p {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .basic__slider-specialist--disease {
+    padding-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+
+  .basic__slider-reviews.basic__slider-reviews--disease {
+    padding: 0 0 50px 0;
+    background: #f3f6f8;
+  }
+
+  .basic__slider-reviews.basic__slider-reviews--disease .slider-reviews li .sl-review {
+    background: #ffffff;
+  }
+
+  .basic__slider-reviews .slider-reviews::before {
+    background: #f3f6f8;
+  }
+
+  .basic__slider-reviews .slider-reviews::after {
+    background: #f3f6f8;
+  }
+}
+
+@media (max-width: 780px) {
+  .feedback-wr--disease {
+    padding-bottom: 50px;
+  }
+}
+
+
+@media (max-width: 470px) {
+  .disease__inner .disease__offers {
+    width: 100%;
+  }
+
+  .offer a {
+    width: auto;
+  }
+
+  .offer b {
+    margin-top: 31px;
+  }
+}
+
+
+// services-diseases-disease_migren.html
+
+
+// special.html
+
+.special__offers {
+  padding: 75px 0 375px 0;
+  display: flex;
+  // align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  row-gap: 50px;
+
+  .offer {
+    width: 393px;
+  }
+
+  .offer b {
+    margin-top: 11px;
+  }
+}
+
+
+@include tablet {
+  .special__offers {
+    padding: 30px 0 50px 0;
+  }
+}
+
+// special.html^^^
+
+
+// memory.html
+
+.memory__text {
+  padding: 75px 0 100px 0;
+}
+
+.memory__text--wr {
+  max-width: 853px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.memory__text .text-wr div {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+@include tablet {
+  .memory__text {
+    padding: 50px 0 50px 0;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .memory__text--wr {
+    padding: 0 10px;
+  }
+
+  .memory .text-wr br {
+    display: none;
+  }
+}
+
+// memory.html^^^
